@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
   <!-- creo il container root che mi andra a contenere tutta l aplicazione in vue  -->
     <div id="root">
      <h1>{{messageH1}}</h1>
-     <img :src="image">
+     <img :src="image" style="width:50%;">
+
+
+     <!-- prove con v-model -->
+     <!-- utilizziamo il v model per gestire il valore di un input -->
+     <div class="input">
+     <input v-model="messageInput"style="width:300px;">
+     </div>
     </div>
 
 
