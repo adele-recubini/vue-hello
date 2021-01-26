@@ -15,12 +15,17 @@
 
      <!-- prove con v-model -->
      <!-- utilizziamo il v-model per gestire il valore di un input -->
+     <!-- gli passo anche il valore di v-bind per racchiuderlo in un div  -->
 
      <input v-model="messageInput" v-bind:class="formaDiv">
 
      <!-- utilizziamo il v-bind per stampare e gestire attributi IMPORTANTE -->
      <!--la classe in html è la chiave nello script, ma il valore nello script è richiamato in css per dargli lo style  -->
-     <!-- posso concatenare il v-model per gestire il valore e il v-bind per gestire lo stule  -->
+     <!-- posso concatenare il v-model per gestire il valore e il v-bind per gestire lo stile -->
+
+
+    <p :class ="color"> ho inserito un colore tramite una classe dando una colorazione , quando schiaccio il bottone cambierò il colore</p>
+     <button @click="changeColor" v-bind:class="button"></button>
 
     </div>
 

@@ -4,8 +4,19 @@ var app = new Vue({
    messageInput:'il valore che passerò sarà una stringa',
    messageH1:'ciao! sopravvivi a vue !',
    image:'img/vue.png',
-   formaDiv:'box',
- }
+   formaDiv:'input-box',
+   button:'box-button',
+   color:'coloreP',
+ },
+methods:{
+  changeColor:function() {
+    this.color = 'colorPclass'
+  }
+
+
+}
+
+
 });
 
 Vue.config.devtools = true;
