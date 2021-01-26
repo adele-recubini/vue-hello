@@ -6,12 +6,18 @@ var app = new Vue({
    image:'img/vue.png',
    formaDiv:'input-box',
    button:'box-button',
-   color:'coloreP',
+   colorOne:'coloreP',
+   colorTwo:'red'
  },
 methods:{
   changeColor:function() {
-    this.color = 'colorPclass'
-  }
+    this.colorOne = 'colorPclass';
+  },
+  changeColorTwo:function() {
+    this.colorTwo = 'pink';
+  },
+
+
 
 
 }

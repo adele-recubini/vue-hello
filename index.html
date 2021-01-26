@@ -23,9 +23,17 @@
      <!--la classe in html è la chiave nello script, ma il valore nello script è richiamato in css per dargli lo style  -->
      <!-- posso concatenare il v-model per gestire il valore e il v-bind per gestire lo stile -->
 
+   <!-- primo esempio con la classe -->
+    <p :class ="colorOne"> ho inserito un colore tramite una classe dando una colorazione , quando schiaccio il bottone cambierò il colore</p>
+    <button @click="changeColor" v-bind:class="button"></button>
 
-    <p :class ="color"> ho inserito un colore tramite una classe dando una colorazione , quando schiaccio il bottone cambierò il colore</p>
-     <button @click="changeColor" v-bind:class="button"></button>
+   <!-- secondo esempio con lo style  -->
+
+   <p :style ="'color:' + colorTwo"> ho inserito un colore tramite una classe dando una colorazione , quando schiaccio il bottone cambierò il colore</p>
+   <button @click="changeColorTwo" v-bind:class="button"></button>
+
+
+
 
     </div>
 
