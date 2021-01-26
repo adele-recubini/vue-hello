@@ -7,7 +7,8 @@ var app = new Vue({
    formaDiv:'input-box',
    button:'box-button',
    colorOne:'coloreP',
-   colorTwo:'red'
+   colorTwo:'red',
+   checkedNames:[],
  },
 methods:{
   changeColor:function() {
