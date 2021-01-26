@@ -4,6 +4,7 @@ var app = new Vue({
    messageInput:'il valore che passerò sarà una stringa',
    messageH1:'ciao! sopravvivi a vue !',
    image:'img/vue.png',
+   formaDiv:'box',
  }
 });
 

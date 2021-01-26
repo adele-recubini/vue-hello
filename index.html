@@ -14,10 +14,18 @@
 
 
      <!-- prove con v-model -->
-     <!-- utilizziamo il v model per gestire il valore di un input -->
+     <!-- utilizziamo il v-model per gestire il valore di un input -->
      <div class="input">
      <input v-model="messageInput"style="width:300px;">
      </div>
+
+
+     <!-- utilizziamo il v-bind pertampare e gestire attributi IMPORTANTE -->
+     <!--la classe in html è la chiave nello script ma il valore nello script è richiamato in css per dargli lo style  -->
+
+    <div v-bind:class="formaDiv">
+
+    </div>
     </div>
 
 
