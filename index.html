@@ -33,12 +33,13 @@
    <button @click="changeColorTwo" v-bind:class="button"></button>
    <br>
    <!-- utilizzo di una checkbox -->
+   <!-- se inserisco .number a v-model mi restituisce un numero invece che una stringa ! -->
 
-   <input type="checkbox" id="sesamo" value=25 v-model="checkedNames">
+   <input type="checkbox" id="sesamo" value=25 v-model.number="checkedNames">
    <label for="sesamo">sesamo</label>
-  <input type="checkbox" id="insalata" value=2 v-model="checkedNames">
+  <input type="checkbox" id="insalata" value=2 v-model.number="checkedNames">
   <label for="insalata">insalata</label>
-  <input type="checkbox" id="ortica" value=6 v-model="checkedNames">
+  <input type="checkbox" id="ortica" value=6 v-model.number="checkedNames">
   <label for="ortica">ortica</label>
   <br>
 <span> hai selezionato questi ingredienti e il loro costo è : {{ checkedNames }}</span>
